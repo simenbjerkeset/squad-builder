@@ -4,6 +4,12 @@ const LEFT_WINGERS = [
         name: "Emil Dahle",
         position: "LW",
         score: 80
+    },
+    {
+        id: 8002,
+        name: "Felix Ademola",
+        position: "LW",
+        score: 80
     }
 ];
 
