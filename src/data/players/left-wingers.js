@@ -9,7 +9,7 @@ const LEFT_WINGERS = [
         id: 8002,
         name: "Felix Ademola",
         position: "LW",
-        score: 80
+        score: 77
     }
 ];
 
