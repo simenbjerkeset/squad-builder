@@ -4,6 +4,12 @@ const GOALKEEPERS = [
         name: "Ivar Rønningen",
         position: "GK",
         score: 60
+    },
+    {
+        id: 1002,
+        name: "Svein Inge Haagenrud",
+        position: "GK",
+        score: 67
     }
 ]; 
 
