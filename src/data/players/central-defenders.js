@@ -4,6 +4,12 @@ const CENTRAL_DEFENDERS = [
         name: "Juha Pasoja",
         position: "CD",
         score: 80
+    },
+    {
+        id: 2002,
+        name: "Ruben Alegre",
+        position: "CD",
+        score: 72
     }
 ]; 
 
