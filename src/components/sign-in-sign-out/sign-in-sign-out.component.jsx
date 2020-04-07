@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { signInWithGoogle } from '../firebase/firebase.utils';
+import { signInWithGoogle } from '../../firebase/firebase.utils';
 
 const SignInSignOut = () => (
     <div className="sign-in-sign-out">
