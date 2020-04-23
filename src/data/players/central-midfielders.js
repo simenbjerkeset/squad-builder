@@ -27,7 +27,25 @@ const CENTRAL_MIDFIELDERS = [
         id: 6005,
         name: "Ståle Solbakken",
         position: "SM",
-        score: 89
+        score: 94
+    },
+    {
+        id: 6006,
+        name: "Rune Buer Johansen",
+        position: "SM",
+        score: 77
+    },
+    {
+        id: 6007,
+        name: "Tom Jacobsen",
+        position: "SM",
+        score: 92
+    },
+    {
+        id: 6008,
+        name: "Vegard Skogheim",
+        position: "SM",
+        score: 86
     }
 ];
 
