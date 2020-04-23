@@ -16,6 +16,18 @@ const CENTRAL_DEFENDERS = [
         name: "Steinar Strømnes",
         position: "CD",
         score: 65
+    },
+    {
+        id: 2004,
+        name: "Peter Sørensen",
+        position: "CD",
+        score: 90
+    },
+    {
+        id: 2005,
+        name: "Glenn Leif Ståhl",
+        position: "CD",
+        score: 85
     }
 ]; 
 
