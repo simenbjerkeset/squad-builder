@@ -8,7 +8,7 @@ const LEFT_BACKS = [
     {   id: 4002,
         name: "Ramiro Corrales",
         position: "LB",
-        score: 82
+        score: 87
     },
     {   id: 4003,
         name: "Jarl André Storbæk",
@@ -19,6 +19,12 @@ const LEFT_BACKS = [
         name: "Jo Nymo Matland",
         position: "LB",
         score: 70
+    },
+    {
+        id: 4005,
+        name: "Tom Henning Hovi",
+        position: "LB",
+        score: 72
     }
 ];
 
