@@ -10,6 +10,14 @@ const MATCH_SNACK = [
     {
         name: "Bouillon",
         value: 80
+    },
+    {
+        name: "Pizza",
+        value: 75
+    },
+    {
+        name: "Soda",
+        value: 60
     }
 ]
 
