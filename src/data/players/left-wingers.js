@@ -10,6 +10,12 @@ const LEFT_WINGERS = [
         name: "Felix Ademola",
         position: "LW",
         score: 77
+    },
+    {
+        id: 8003,
+        name: "Petter Vaagan Moen",
+        position: "LW",
+        score: 94
     }
 ];
 

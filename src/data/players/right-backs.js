@@ -4,6 +4,12 @@ const RIGHT_BACKS = [
         name: "Hans Nordbye",
         position: "RB",
         score: 72
+    },
+    {
+        id: 3002,
+        name: "Hai Lam",
+        position: "RB",
+        score: 75
     }
 ];
 

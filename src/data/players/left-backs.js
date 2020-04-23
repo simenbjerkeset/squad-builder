@@ -1,7 +1,7 @@
 const LEFT_BACKS = [
     {
         id: 4001,
-        name: "John Anders Riise",
+        name: "John Anders Rise",
         position: "LB",
         score: 81
     },

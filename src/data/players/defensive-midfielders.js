@@ -4,6 +4,12 @@ const DEFENSIVE_MIDFIELDERS = [
         name: "Jan Michaelsen",
         position: "DM",
         score: 81
+    },
+    {
+        id: 5002,
+        name: "Arnar Førsund",
+        position: "DM",
+        score: 33
     }
 ];
 
