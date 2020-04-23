@@ -3,13 +3,13 @@ const STRIKERS = [
         id: 10001,
         name: "Roman Kieast",
         position: "S",
-        score: 77
+        score: 83
     },
     {
         id: 10002,
         name: "Oluwasegun Abiodun",
         position: "S",
-        score: 61
+        score: 71
     },
     {
         id: 10003,
@@ -21,13 +21,31 @@ const STRIKERS = [
         id: 10004,
         name: "Thomas Lehne Olsen",
         position: "S",
-        score: 74
+        score: 81
     },
     {
         id: 10005,
         name: "Marcus Pedersen",
         position: "S",
         score: 82
+    },
+    {
+        id: 10006,
+        name: "Pål Jacobsen",
+        position: "S",
+        score: 96
+    },
+    {
+        id: 10007,
+        name: "Espen Olsen",
+        position: "S",
+        score: 85
+    },
+    {
+        id: 10008,
+        name: "Geir Frigård",
+        position: "S",
+        score: 73
     }
 ];
 
