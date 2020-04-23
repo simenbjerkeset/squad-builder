@@ -28,6 +28,18 @@ const CENTRAL_DEFENDERS = [
         name: "Glenn Leif Ståhl",
         position: "CD",
         score: 85
+    },
+    {
+        id: 2006,
+        name: "Leif Nordli",
+        position: "CD",
+        score: 87
+    },
+    {
+        id: 2007,
+        name: "Terje Kojedal",
+        position: "CD",
+        score: 82
     }
 ]; 
 
