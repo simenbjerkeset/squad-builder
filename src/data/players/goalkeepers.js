@@ -22,6 +22,12 @@ const GOALKEEPERS = [
         name: "Jon Masalin",
         position: "GK",
         score: 58
+    },
+    {
+        id: 1005,
+        name: "Andreas Hippe Fagereng",
+        position: "GK",
+        score: 50
     }
 ]; 
 
