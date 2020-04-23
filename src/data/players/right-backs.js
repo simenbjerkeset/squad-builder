@@ -10,6 +10,24 @@ const RIGHT_BACKS = [
         name: "Hai Lam",
         position: "RB",
         score: 75
+    },
+    {
+        id: 3003,
+        name: "Axel Smeets",
+        position: "RB",
+        score: 85
+    },
+    {
+        id: 3004,
+        name: "Jonathan Borrajo",
+        position: "RB",
+        score: 65
+    },
+    {
+        id: 3005,
+        name: "Truls Jevne Hagen",
+        position: "RB",
+        score: 82
     }
 ];
 
