@@ -46,6 +46,18 @@ const CENTRAL_MIDFIELDERS = [
         name: "Vegard Skogheim",
         position: "SM",
         score: 86
+    },
+    {
+        id: 6009,
+        name: "Vegar Bjerke",
+        position: "SM",
+        score: 78
+    },
+    {
+        id: 6010,
+        name: "Ante Vitaic",
+        position: "SM",
+        score: 83
     }
 ];
 
