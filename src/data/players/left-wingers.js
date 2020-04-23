@@ -16,6 +16,18 @@ const LEFT_WINGERS = [
         name: "Petter Vaagan Moen",
         position: "LW",
         score: 94
+    },
+    {
+        id: 8004,
+        name: "Tommy Øren",
+        position: "LW",
+        score: 79
+    },
+    {
+        id: 8005,
+        name: "Simen Bolkan Nordli",
+        position: "LW",
+        score: 88
     }
 ];
 
