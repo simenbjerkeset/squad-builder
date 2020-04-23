@@ -46,6 +46,12 @@ const STRIKERS = [
         name: "Geir Frigård",
         position: "S",
         score: 73
+    },
+    {
+        id: 10009,
+        name: "Ivar Sollie Rønning",
+        position: "S",
+        score: 80
     }
 ];
 
