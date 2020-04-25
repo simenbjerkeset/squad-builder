@@ -4,6 +4,7 @@ import STAFF from './staff/root-staff';
 import ARENAS from './arenas/arenas';
 import MATCH_SNACK from './match-snack/match-snack';
 import SPONSORS from './sponsors/sponsors';
+import FORMATIONS from './formations/formations';
 
 const DATA = {
     PLAYERS,
@@ -11,7 +12,8 @@ const DATA = {
     STAFF,
     ARENAS,
     MATCH_SNACK,
-    SPONSORS
+    SPONSORS,
+    FORMATIONS
 }
 
 export default DATA;

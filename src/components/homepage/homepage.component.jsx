@@ -1,14 +1,15 @@
 import React from 'react';
 
+import TeamDraft from '../team-draft/team-draft.component';
+
 import './homepage.styles.scss';
 
-const Homepage = () => (
-    <div className="homepage">
-        <div className="content">
-            <h1 className="title">TEAM DRAFT</h1>
-            <button className="start">start</button>
+const Homepage = () => {
+    return (
+        <div className="homepage">
+            <TeamDraft />
         </div>
-    </div>
-)
+    )
+}
 
 export default Homepage;

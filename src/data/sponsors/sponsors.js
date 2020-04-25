@@ -12,10 +12,6 @@ const SPONSORS = [
         value: 65
     },
     {
-        name: "Benq Siemens",
-        value: 80
-    },
-    {
         name: "Eidsiva Energi",
         value: 77
     },

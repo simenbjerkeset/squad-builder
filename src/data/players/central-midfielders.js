@@ -58,6 +58,30 @@ const CENTRAL_MIDFIELDERS = [
         name: "Ante Vitaic",
         position: "SM",
         score: 83
+    },
+    {
+        id: 6011,
+        name: "Jan Michaelsen",
+        position: "DM",
+        score: 81
+    },
+    {
+        id: 6012,
+        name: "Arnar Førsund",
+        position: "DM",
+        score: 33
+    },
+    {
+        id: 6013,
+        name: "Kristian Lønstad Onsrud",
+        position: "OM",
+        score: 79
+    },
+    {
+        id: 6014,
+        name: "Stein Kollshaugen",
+        position: "SM",
+        score: 72
     }
 ];
 

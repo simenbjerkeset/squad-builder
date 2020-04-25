@@ -40,6 +40,12 @@ const CENTRAL_DEFENDERS = [
         name: "Terje Kojedal",
         position: "CD",
         score: 82
+    },
+    {
+        id: 2008,
+        name: "Cato Erstad",
+        position: "CD",
+        score: 70
     }
 ]; 
 

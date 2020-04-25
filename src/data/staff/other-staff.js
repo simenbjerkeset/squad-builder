@@ -28,6 +28,12 @@ const OTHER_STAFF = [
         name: "Pål Jacobsen",
         position: "Sports Director",
         value: 80
+    },
+    {
+        id: 12006,
+        name: "Rolf Høgmo",
+        position: "Keepertrener",
+        value: 81
     }
 ]
 
