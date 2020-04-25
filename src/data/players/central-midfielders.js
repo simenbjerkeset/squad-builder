@@ -60,12 +60,6 @@ const CENTRAL_MIDFIELDERS = [
         score: 83
     },
     {
-        id: 6011,
-        name: "Jan Michaelsen",
-        position: "DM",
-        score: 81
-    },
-    {
         id: 6012,
         name: "Arnar Førsund",
         position: "DM",

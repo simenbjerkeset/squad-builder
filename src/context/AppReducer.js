@@ -49,6 +49,21 @@ export default (state, action) => {
                 ...state,
                 staff: action.payload
             }
+        case 'UPDATE_ARENA':
+                return {
+                    ...state,
+                    arena: action.payload
+                }
+        case 'UPDATE_SPONSOR':
+            return {
+                ...state,
+                sponsor: action.payload
+            }
+        case 'UPDATE_MATCH_SNACK':
+            return {
+                ...state,
+                matchSnack: action.payload
+            }
         default:
             return state;
     }

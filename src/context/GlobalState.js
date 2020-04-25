@@ -73,6 +73,27 @@ export const GlobalProvider = ({ children }) => {
             payload: staff
         })
     }
+
+    const updateArena = (arena) => {
+        dispatch({
+            type: 'UPDATE_ARENA',
+            payload: arena
+        })
+    }
+
+    const updateSponsor = (sponsor) => {
+        dispatch({
+            type: 'UPDATE_SPONSOR',
+            payload: sponsor
+        })
+    }
+
+    const updateMatchSnacks = (matchSnack) => {
+        dispatch({
+            type: 'UPDATE_MATCH_SNACK',
+            payload: matchSnack
+        })
+    }
     
     return (
         <GlobalContext.Provider value={{
@@ -84,7 +105,10 @@ export const GlobalProvider = ({ children }) => {
             addPlayer,
             updateCaptain,
             updateCoach,
-            updateStaff}}>
+            updateStaff,
+            updateArena,
+            updateSponsor,
+            updateMatchSnacks}}>
             {children}
         </GlobalContext.Provider>
     )
