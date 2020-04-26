@@ -64,6 +64,21 @@ export default (state, action) => {
                 ...state,
                 matchSnack: action.payload
             }
+        case 'START_OVER':
+            return {
+                step: 0,
+                name: "",
+                formation: "",
+                playerStep: 1,
+                players: [],
+                captain: "",
+                coach: "",
+                staff: "",
+                arena: "",
+                sponsor: "",
+                matchSnack: "",
+                score: 0
+            }
         default:
             return state;
     }

@@ -12,7 +12,8 @@ const initialState = {
     staff: "",
     arena: "",
     sponsor: "",
-    matchSnack: ""
+    matchSnack: "",
+    score: 0
 }
 
 export const GlobalContext = createContext(initialState);
@@ -94,6 +95,12 @@ export const GlobalProvider = ({ children }) => {
             payload: matchSnack
         })
     }
+
+    const startOver = () => {
+        dispatch({
+            type: 'START_OVER'
+        })
+    }
     
     return (
         <GlobalContext.Provider value={{
@@ -108,7 +115,8 @@ export const GlobalProvider = ({ children }) => {
             updateStaff,
             updateArena,
             updateSponsor,
-            updateMatchSnacks}}>
+            updateMatchSnacks,
+            startOver}}>
             {children}
         </GlobalContext.Provider>
     )

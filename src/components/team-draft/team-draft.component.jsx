@@ -12,6 +12,7 @@ import Staff from './steps/staff';
 import Arena from './steps/arena';
 import Sponsor from './steps/sponsor';
 import MatchSnack from './steps/match-snack';
+import Results from './steps/results';
 
 export const TeamDraft = () => {
     // console.log(DATA);
@@ -34,7 +35,7 @@ export const TeamDraft = () => {
         - captain: 2x player score
     */
 
-    const { step, name, formation, players, captain, coach, staff, arena, sponsor, matchSnack } = useContext(GlobalContext);
+    const { step } = useContext(GlobalContext);
 
     switch(step) {
         case 0: return <InitialStep />
@@ -46,21 +47,7 @@ export const TeamDraft = () => {
         case 6: return <Arena />
         case 7: return <Sponsor />
         case 8: return <MatchSnack />
-        default:
-            return (
-                <div>
-                    <p>Name: {name}</p>
-                    <p>Formation: {formation}</p>
-                    <p>Players:</p>
-                    {players.map(player => <p key={player.name}>{player.position}: {player.name}</p>)}
-                    <p>Captain: {captain}</p>
-                    <p>Coach: {coach}</p>
-                    <p>Staff: {staff}</p>
-                    <p>Arena: {arena}</p>
-                    <p>Sponsor: {sponsor}</p>
-                    <p>Match-snack: {matchSnack}</p>
-                </div>
-            );
+        default: return <Results />;
     }
 };
 
