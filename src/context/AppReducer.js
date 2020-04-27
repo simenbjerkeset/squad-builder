@@ -32,12 +32,14 @@ export default (state, action) => {
         case 'ADD_PLAYER':
             return {
                 ...state,
-                players: [...state.players, action.payload]
+                players: [...state.players, action.payload],
+                score: state.score + action.payload.score
             }
         case 'UPDATE_CAPTAIN':
             return {
                 ...state,
-                captain: action.payload
+                captain: action.payload,
+                score: state.score + action.payload.score
             }
         case 'UPDATE_COACH':
             return {

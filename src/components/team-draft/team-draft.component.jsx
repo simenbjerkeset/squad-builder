@@ -6,7 +6,7 @@ import './team-draft.styles.scss';
 import TeamName from './steps/team-name.component';
 import InitialStep from './steps/initial-step';
 import Formation from './steps/formation';
-import Players from './steps/players';
+import Players from './steps/players/players';
 import Coach from './steps/coach';
 import Staff from './steps/staff';
 import Arena from './steps/arena';

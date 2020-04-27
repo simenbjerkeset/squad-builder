@@ -6,8 +6,7 @@ const Captain = () => {
     const { players, updateCaptain, nextStep } = useContext(GlobalContext);
 
     const handleSelection = event => {
-        const { value } = event.target;
-        updateCaptain(value);
+        updateCaptain(players[event.target.value-1]);
     }
 
     const handleSubmit = (event) => {
@@ -23,8 +22,8 @@ const Captain = () => {
                 <select defaultValue={0} onChange={handleSelection} required>
                     <option value="">Choose captain..</option>
                     {
-                        players.map(player => {
-                        return <option key={player.name} value={player.name}>{player.name}</option>
+                        players.map((player, i) => {
+                        return <option key={player.name} value={i+1}>{player.name}</option>
                         })
                     }
                 </select>

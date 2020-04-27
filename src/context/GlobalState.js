@@ -1,6 +1,8 @@
 import React, { createContext, useReducer } from 'react';
 import AppReducer from './AppReducer';
 
+import DATA from '../data/root-data';
+
 const initialState = {
     step: 0,
     name: "",
@@ -13,7 +15,15 @@ const initialState = {
     arena: "",
     sponsor: "",
     matchSnack: "",
-    score: 0
+    score: 0,
+    goalkeepers: DATA.PLAYERS.GOALKEEPERS,
+    rightBacks: DATA.PLAYERS.RIGHT_BACKS,
+    centralDefenders: DATA.PLAYERS.CENTRAL_DEFENDERS,
+    leftBacks: DATA.PLAYERS.LEFT_BACKS,
+    centralMidfielders: DATA.PLAYERS.CENTRAL_MIDFIELDERS,
+    rightWingers: DATA.PLAYERS.RIGHT_WINGERS,
+    leftWingers: DATA.PLAYERS.LEFT_WINGERS,
+    strikers: DATA.PLAYERS.STRIKERS,
 }
 
 export const GlobalContext = createContext(initialState);
