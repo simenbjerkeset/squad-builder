@@ -8,8 +8,7 @@ const Arena = () => {
     const { updateArena, nextStep } = useContext(GlobalContext);
 
     const handleSelection = event => {
-        const { value } = event.target;
-        updateArena(value);
+        updateArena(ARENAS[event.target.value]);
         nextStep();
     }
 
@@ -17,8 +16,8 @@ const Arena = () => {
         <div className="arena">
             <h1>Pick a stadium</h1>
             {
-                ARENAS.map(arena => {
-                    return <button onClick={handleSelection} key={arena.name} value={arena.name}>{arena.name}</button>
+                ARENAS.map((arena, i) => {
+                    return <button onClick={handleSelection} key={arena.name} value={i}>{arena.name}</button>
                 })
             }
         </div>

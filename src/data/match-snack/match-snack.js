@@ -1,23 +1,23 @@
 const MATCH_SNACK = [
     {
         name: "Cracked hot dogs",
-        value: 90
+        score: 90
     },
     {
         name: "Coffee",
-        value: 70
+        score: 70
     },
     {
         name: "Bouillon",
-        value: 80
+        score: 80
     },
     {
         name: "Pizza",
-        value: 75
+        score: 75
     },
     {
         name: "Soda",
-        value: 60
+        score: 60
     }
 ]
 

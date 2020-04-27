@@ -8,8 +8,7 @@ const MatchSnack = () => {
     const { updateMatchSnacks, nextStep } = useContext(GlobalContext);
 
     const handleSelection = event => {
-        const { value } = event.target;
-        updateMatchSnacks(value);
+        updateMatchSnacks(MATCH_SNACKS[event.target.value]);
         nextStep();
     }
 
@@ -17,8 +16,8 @@ const MatchSnack = () => {
         <div className="match-snack">
             <h1>Pick a snack for your homegames</h1>
             {
-                MATCH_SNACKS.map(snack => {
-                    return <button onClick={handleSelection} key={snack.name} value={snack.name}>{snack.name}</button>
+                MATCH_SNACKS.map((snack, i) => {
+                    return <button onClick={handleSelection} key={snack.name} value={i}>{snack.name}</button>
                 })
             }
         </div>

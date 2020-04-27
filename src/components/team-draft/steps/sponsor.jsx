@@ -8,8 +8,7 @@ const Sponsor = () => {
     const { updateSponsor, nextStep } = useContext(GlobalContext);
 
     const handleSelection = event => {
-        const { value } = event.target;
-        updateSponsor(value);
+        updateSponsor(SPONSORS[event.target.value]);
         nextStep();
     }
 
@@ -17,8 +16,8 @@ const Sponsor = () => {
         <div className="sponsor">
             <h1>Pick a sponsor</h1>
             {
-                SPONSORS.map(sponsor => {
-                    return <button onClick={handleSelection} key={sponsor.name} value={sponsor.name}>{sponsor.name}</button>
+                SPONSORS.map((sponsor, i) => {
+                    return <button onClick={handleSelection} key={sponsor.name} value={i}>{sponsor.name}</button>
                 })
             }
         </div>

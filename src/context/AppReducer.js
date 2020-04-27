@@ -44,27 +44,32 @@ export default (state, action) => {
         case 'UPDATE_COACH':
             return {
                 ...state,
-                coach: action.payload
+                coach: action.payload,
+                score: state.score + action.payload.score
             }
         case 'UPDATE_STAFF':
             return {
                 ...state,
-                staff: action.payload
+                staff: action.payload,
+                score: state.score + action.payload.score
             }
         case 'UPDATE_ARENA':
-                return {
-                    ...state,
-                    arena: action.payload
-                }
+            return {
+                ...state,
+                arena: action.payload,
+                score: state.score + action.payload.score
+            }
         case 'UPDATE_SPONSOR':
             return {
                 ...state,
-                sponsor: action.payload
+                sponsor: action.payload,
+                score: state.score + action.payload.score
             }
         case 'UPDATE_MATCH_SNACK':
             return {
                 ...state,
-                matchSnack: action.payload
+                matchSnack: action.payload,
+                score: state.score + action.payload.score
             }
         case 'START_OVER':
             return {

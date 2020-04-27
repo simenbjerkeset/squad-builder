@@ -18,11 +18,11 @@ const Results = () => {
             <p>Players:</p>
             {players.map(player => <p key={player.name}>{player.position}: {player.name}</p>)}
             <p>Captain: {captain.name}</p>
-            <p>Coach: {coach}</p>
-            <p>Staff: {staff}</p>
-            <p>Arena: {arena}</p>
-            <p>Sponsor: {sponsor}</p>
-            <p>Match-snack: {matchSnack}</p>
+            <p>Coach: {coach.name}</p>
+            <p>Staff: {staff.name}</p>
+            <p>Arena: {arena.name}</p>
+            <p>Sponsor: {sponsor.name}</p>
+            <p>Match-snack: {matchSnack.name}</p>
             <button onClick={RestartGame}>Try again</button>
         </div>
     )

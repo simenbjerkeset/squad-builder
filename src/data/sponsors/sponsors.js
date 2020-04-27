@@ -1,23 +1,23 @@
 const SPONSORS = [
     {
         name: "Benq Siemens",
-        value: 80
+        score: 80
     },
     {
         name: "Sparebanken Hedmark",
-        value: 85
+        score: 85
     },
     {
         name: "DNB",
-        value: 65
+        score: 65
     },
     {
         name: "Eidsiva Energi",
-        value: 77
+        score: 77
     },
     {
         name: "Siemens",
-        value: 79
+        score: 79
     }
 ]
 

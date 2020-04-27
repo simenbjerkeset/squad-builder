@@ -1,23 +1,23 @@
 const ARENAS = [
     {
         name: "Gamle Briskeby stadion",
-        value: 92
+        score: 92
     },
     {
         name: "Nye Briskeby stadion",
-        value: 87
+        score: 87
     },
     {
         name: "HIAS",
-        value: 50
+        score: 50
     },
     {
         name: "Børstad",
-        value: 40
+        score: 40
     },
     {
         name: "Prestrud",
-        value: 45
+        score: 45
     }
 ]
 
