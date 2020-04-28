@@ -17,38 +17,86 @@ const Position = ({position}) => {
         players } = useContext(GlobalContext);
 
     let playersInPosition = [];
+    let potentialPlayers = [];
 
     switch(position) {
         case 'goalkeeper': {
-            playersInPosition = goalkeepers;
+            potentialPlayers = goalkeepers;
+
+            for (let i = 0; i < 5; i++) {
+                let randomNumber = Math.floor(Math.random() * potentialPlayers.length);
+                playersInPosition.push(potentialPlayers[randomNumber]);
+                potentialPlayers.splice(randomNumber, 1);
+            }
             break;
         }
         case 'rightBack': {
-            playersInPosition = rightBacks;
+            potentialPlayers = rightBacks;
+
+            for (let i = 0; i < 5; i++) {
+                let randomNumber = Math.floor(Math.random() * potentialPlayers.length);
+                playersInPosition.push(potentialPlayers[randomNumber]);
+                potentialPlayers.splice(randomNumber, 1);
+            }
             break;
         }
         case 'centralDefender': {
-            playersInPosition = centralDefenders.filter(cd => !players.includes(cd));
+            potentialPlayers = centralDefenders.filter(cd => !players.includes(cd));
+            for (let i = 0; i < 5; i++) {
+                let randomNumber = Math.floor(Math.random() * potentialPlayers.length);
+                playersInPosition.push(potentialPlayers[randomNumber]);
+                potentialPlayers.splice(randomNumber, 1);
+            }
             break;
         }
         case 'leftBack': {
-            playersInPosition = leftBacks;
+            potentialPlayers = leftBacks;
+
+            for (let i = 0; i < 5; i++) {
+                let randomNumber = Math.floor(Math.random() * potentialPlayers.length);
+                playersInPosition.push(potentialPlayers[randomNumber]);
+                potentialPlayers.splice(randomNumber, 1);
+            }
             break;
         }
         case 'centralMidfielder': {
-            playersInPosition = centralMidfielders.filter(cm => !players.includes(cm));
+            potentialPlayers = centralMidfielders.filter(cm => !players.includes(cm));
+
+            for (let i = 0; i < 5; i++) {
+                let randomNumber = Math.floor(Math.random() * potentialPlayers.length);
+                playersInPosition.push(potentialPlayers[randomNumber]);
+                potentialPlayers.splice(randomNumber, 1);
+            }
             break;
         }
         case 'rightWinger': {
-            playersInPosition = rightWingers;
+            potentialPlayers = rightWingers;
+
+            for (let i = 0; i < 5; i++) {
+                let randomNumber = Math.floor(Math.random() * potentialPlayers.length);
+                playersInPosition.push(potentialPlayers[randomNumber]);
+                potentialPlayers.splice(randomNumber, 1);
+            }
             break;
         }
         case 'leftWinger': {
-            playersInPosition = leftWingers;
+            potentialPlayers = leftWingers;
+
+            for (let i = 0; i < 5; i++) {
+                let randomNumber = Math.floor(Math.random() * potentialPlayers.length);
+                playersInPosition.push(potentialPlayers[randomNumber]);
+                potentialPlayers.splice(randomNumber, 1);
+            }
             break;
         }
         case 'striker': {
-            playersInPosition = strikers.filter(s => !players.includes(s));
+            potentialPlayers = strikers.filter(s => !players.includes(s));
+
+            for (let i = 0; i < 5; i++) {
+                let randomNumber = Math.floor(Math.random() * potentialPlayers.length);
+                playersInPosition.push(potentialPlayers[randomNumber]);
+                potentialPlayers.splice(randomNumber, 1);
+            }
             break;
         }
         default: break;
