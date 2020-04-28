@@ -7,8 +7,17 @@ import COACHES from '../../../data/staff/coaches';
 const Coach = () => {
     const { updateCoach, nextStep } = useContext(GlobalContext);
 
+    let coachAlternatives = [];
+    let potentialAlternatives = COACHES;
+
+    for (let i = 0; i < 5; i++) {
+        let randomNumber = Math.floor(Math.random() * potentialAlternatives.length);
+        coachAlternatives.push(potentialAlternatives[randomNumber]);
+        potentialAlternatives.splice(randomNumber, 1);
+    }
+
     const handleSelection = event => {
-        updateCoach(COACHES[event.target.value]);
+        updateCoach(coachAlternatives[event.target.value]);
         nextStep();
     }
 
@@ -16,7 +25,7 @@ const Coach = () => {
         <div className="coach">
             <h1>Who will coach you team?</h1>
             {
-                COACHES.map((coach, i) => {
+                coachAlternatives.map((coach, i) => {
                     return <button onClick={handleSelection} key={coach.id} value={i}>{coach.name}</button>
                 })
             }

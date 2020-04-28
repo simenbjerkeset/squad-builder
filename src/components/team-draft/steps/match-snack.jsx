@@ -7,8 +7,17 @@ import MATCH_SNACKS from '../../../data/match-snack/match-snack';
 const MatchSnack = () => {
     const { updateMatchSnacks, nextStep } = useContext(GlobalContext);
 
+    let snackAlternatives = [];
+    let potentialAlternatives = MATCH_SNACKS;
+
+    for (let i = 0; i < 5; i++) {
+        let randomNumber = Math.floor(Math.random() * potentialAlternatives.length);
+        snackAlternatives.push(potentialAlternatives[randomNumber]);
+        potentialAlternatives.splice(randomNumber, 1);
+    }
+
     const handleSelection = event => {
-        updateMatchSnacks(MATCH_SNACKS[event.target.value]);
+        updateMatchSnacks(snackAlternatives[event.target.value]);
         nextStep();
     }
 
@@ -16,7 +25,7 @@ const MatchSnack = () => {
         <div className="match-snack">
             <h1>Pick a snack for your homegames</h1>
             {
-                MATCH_SNACKS.map((snack, i) => {
+                snackAlternatives.map((snack, i) => {
                     return <button onClick={handleSelection} key={snack.name} value={i}>{snack.name}</button>
                 })
             }
