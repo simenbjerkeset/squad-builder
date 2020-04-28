@@ -4,7 +4,7 @@ const POSITIONS = [
     "RB",
     "LB",
     "DM",
-    "SM",
+    "CM",
     "OM",
     "LW",
     "RW",

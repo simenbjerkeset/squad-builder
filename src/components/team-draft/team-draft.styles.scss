@@ -1,0 +1,29 @@
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+select {
+    width: 300px;
+    height: 40px;
+    margin: auto 10px;
+    font-size: 16px;
+}
+
+.team-name form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 276px;
+    height: 20px;
+    margin: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.team-name button {
+    width: 300px;
+    margin: 10px auto;
+}

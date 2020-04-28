@@ -10,11 +10,16 @@ const TeamName = () => {
         updateTeamName(value);
     }
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        nextStep();
+    }
+
     return(
         <div className="team-name">
             <h1>Choose a team name</h1>
-            <form onSubmit={nextStep}>
-                <input type="text" defaultValue={name} onChange={handleChange} required/>
+            <form onSubmit={handleSubmit}>
+                <input type="text" defaultValue={name} onChange={handleChange} placeholder="Team name..." required/>
                 <button type="submit">Next step</button>
             </form>
         </div>

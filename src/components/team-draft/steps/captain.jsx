@@ -16,7 +16,7 @@ const Captain = () => {
     }
 
     return (
-        <div>
+        <div className="captain">
             <h1>Who will be your captain?</h1>
             <form onSubmit={handleSubmit}>
                 <select defaultValue={0} onChange={handleSelection} required>
@@ -27,7 +27,7 @@ const Captain = () => {
                         })
                     }
                 </select>
-                <button type="submit">Neste steg</button>
+                <button type="submit">Next step</button>
             </form>
         </div>
     )

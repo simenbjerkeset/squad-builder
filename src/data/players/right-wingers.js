@@ -9,13 +9,13 @@ const RIGHT_WINGERS = [
         id: 9002,
         name: "Marius Gullerud",
         position: "RW",
-        score: 75
+        score: 78
     },
     {
         id: 9003,
         name: "Pål Alexander Kirkevold",
         position: "RW",
-        score: 79
+        score: 82
     },
     {
         id: 9004,
@@ -28,6 +28,12 @@ const RIGHT_WINGERS = [
         name: "Stian Berget",
         position: "RW",
         score: 78
+    },
+    {
+        id: 9006,
+        name: "Ole Erik Midtskogen",
+        position: "RW",
+        score: 72
     }
 ];
 

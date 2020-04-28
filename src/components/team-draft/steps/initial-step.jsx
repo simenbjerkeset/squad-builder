@@ -7,7 +7,7 @@ const InitialStep = () => {
 
     return (
         <div className="initial-step">
-            <h1>Team draft</h1>
+            <h1>Ham-Kam Team Draft</h1>
             <button onClick={nextStep}>Get started</button>
         </div>
     )

@@ -1,0 +1,11 @@
+html {
+    heigth: 100%;
+}
+
+body {
+    background-image: linear-gradient(#339933, #ffffff);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+}
