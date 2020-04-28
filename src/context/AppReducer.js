@@ -30,10 +30,17 @@ export default (state, action) => {
                 formation: action.payload
             }
         case 'ADD_PLAYER':
+            let playerScore = action.payload.score;
+
+            if (action.payload.name === "Markus Solbakken" && state.players.some(player => player.name === "Ståle Solbakken")) playerScore += 100;
+            if (action.payload.name === "Ståle Solbakken" && state.players.some(player => player.name === "Markus Solbakken")) playerScore += 100;
+            if (action.payload.name === "Pål Jacobsen" && state.players.some(player => player.name === "Tom Jacobsen")) playerScore += 100;
+            if (action.payload.name === "Simen Bolkan Nordli" && state.players.some(player => player.name === "Leif Nordli")) playerScore += 100;
+
             return {
                 ...state,
                 players: [...state.players, action.payload],
-                score: state.score + action.payload.score
+                score: state.score + playerScore
             }
         case 'UPDATE_CAPTAIN':
             return {
@@ -42,16 +49,27 @@ export default (state, action) => {
                 score: state.score + action.payload.score
             }
         case 'UPDATE_COACH':
+            let coachScore = action.payload.score;
+
+            if (action.payload.name === "Ståle Solbakken" && state.players.some(player => player.name === "Ståle Solbakken")) coachScore += 100;
+            if (action.payload.name === "Vegard Skogheim" && state.players.some(player => player.name === "Vegard Skogheim")) coachScore += 100;
+
             return {
                 ...state,
                 coach: action.payload,
-                score: state.score + action.payload.score
+                score: state.score + coachScore
             }
         case 'UPDATE_STAFF':
+            let staffScore = action.payload.score;
+
+            if (action.payload.name === "Espen Olsen" && state.players.some(player => player.name === "Espen Olsen")) staffScore += 100;
+            if (action.payload.name === "John Anders Rise" && state.players.some(player => player.name === "John Anders Rise")) staffScore += 100;
+            if (action.payload.name === "Pål Jacobsen" && state.players.some(player => player.name === "Pål Jacobsen")) staffScore += 100;
+
             return {
                 ...state,
                 staff: action.payload,
-                score: state.score + action.payload.score
+                score: state.score + staffScore
             }
         case 'UPDATE_ARENA':
             return {
