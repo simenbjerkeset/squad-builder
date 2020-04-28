@@ -2,12 +2,12 @@ import React, { useContext } from 'react';
 
 import { GlobalContext } from '../../../context/GlobalState';
 
-const TeamName = () => {
-    const { name, nextStep, updateTeamName } = useContext(GlobalContext);
+const Username = () => {
+    const { nextStep, updateUsername } = useContext(GlobalContext);
 
     const handleChange = event => {
         const { value } = event.target;
-        updateTeamName(value);
+        updateUsername(value);
     }
 
     const handleSubmit = (event) => {
@@ -17,13 +17,13 @@ const TeamName = () => {
 
     return(
         <div className="team-name">
-            <h1>Choose a team name</h1>
+            <h1>Fill in your username</h1>
             <form onSubmit={handleSubmit}>
-                <input autoFocus type="text" defaultValue={name} onChange={handleChange} placeholder="Team name..." required/>
+                <input autoFocus type="text" onChange={handleChange} placeholder="Username..." required/>
                 <button type="submit">Next step</button>
             </form>
         </div>
     )
 }
 
-export default TeamName;
+export default Username;

@@ -19,6 +19,11 @@ export default (state, action) => {
                 ...state,
                 playerStep: nextPlayer
             }
+        case 'UPDATE_USERNAME':
+            return {
+                ...state,
+                username: action.payload
+            }
         case 'UPDATE_TEAM_NAME':
             return {
                 ...state,

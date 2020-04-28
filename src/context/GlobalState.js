@@ -5,6 +5,7 @@ import DATA from '../data/root-data';
 
 const initialState = {
     step: 0,
+    username: "",
     name: "",
     formation: "",
     playerStep: 1,
@@ -40,6 +41,13 @@ export const GlobalProvider = ({ children }) => {
     const nextPlayer = () => {
         dispatch({
             type: 'NEXT_PLAYER'
+        })
+    }
+
+    const updateUsername = (name) => {
+        dispatch({
+            type: 'UPDATE_USERNAME',
+            payload: name
         })
     }
 
@@ -117,6 +125,7 @@ export const GlobalProvider = ({ children }) => {
             ...state,
             nextStep,
             nextPlayer,
+            updateUsername,
             updateTeamName,
             updateFormation,
             addPlayer,
