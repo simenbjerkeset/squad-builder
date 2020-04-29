@@ -1,5 +1,3 @@
-import DATA from '../data/root-data';
-
 export default (state, action) => {
     switch(action.type) {
         case 'NEXT_STEP':
@@ -98,26 +96,7 @@ export default (state, action) => {
             }
         case 'START_OVER':
             return {
-                step: 0,
-                name: "",
-                formation: "",
-                playerStep: 1,
-                players: [],
-                captain: "",
-                coach: "",
-                staff: "",
-                arena: "",
-                sponsor: "",
-                matchSnack: "",
-                score: 0,
-                goalkeepers: DATA.PLAYERS.GOALKEEPERS,
-                rightBacks: DATA.PLAYERS.RIGHT_BACKS,
-                centralDefenders: DATA.PLAYERS.CENTRAL_DEFENDERS,
-                leftBacks: DATA.PLAYERS.LEFT_BACKS,
-                centralMidfielders: DATA.PLAYERS.CENTRAL_MIDFIELDERS,
-                rightWingers: DATA.PLAYERS.RIGHT_WINGERS,
-                leftWingers: DATA.PLAYERS.LEFT_WINGERS,
-                strikers: DATA.PLAYERS.STRIKERS
+                ...action.payload
             }
         default:
             return state;

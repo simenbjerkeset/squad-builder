@@ -8,7 +8,7 @@ const Arena = () => {
     const { updateArena, nextStep } = useContext(GlobalContext);
 
     let arenaAlternatives = [];
-    let potentialAlternatives = ARENAS;
+    let potentialAlternatives = ARENAS.slice(0);
 
     for (let i = 0; i < 5; i++) {
         let randomNumber = Math.floor(Math.random() * potentialAlternatives.length);

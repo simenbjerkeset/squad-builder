@@ -116,7 +116,8 @@ export const GlobalProvider = ({ children }) => {
 
     const startOver = () => {
         dispatch({
-            type: 'START_OVER'
+            type: 'START_OVER',
+            payload: initialState
         })
     }
     

@@ -8,7 +8,7 @@ const Staff = () => {
     const { updateStaff, nextStep } = useContext(GlobalContext);
 
     let staffAlternatives = [];
-    let potentialAlternatives = STAFF;
+    let potentialAlternatives = STAFF.slice(0);
 
     for (let i = 0; i < 5; i++) {
         let randomNumber = Math.floor(Math.random() * potentialAlternatives.length);

@@ -8,7 +8,7 @@ const MatchSnack = () => {
     const { updateMatchSnacks, nextStep } = useContext(GlobalContext);
 
     let snackAlternatives = [];
-    let potentialAlternatives = MATCH_SNACKS;
+    let potentialAlternatives = MATCH_SNACKS.slice(0);
 
     for (let i = 0; i < 5; i++) {
         let randomNumber = Math.floor(Math.random() * potentialAlternatives.length);

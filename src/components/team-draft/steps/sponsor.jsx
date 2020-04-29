@@ -8,7 +8,7 @@ const Sponsor = () => {
     const { updateSponsor, nextStep } = useContext(GlobalContext);
 
     let sponsorAlternatives = [];
-    let potentialAlternatives = SPONSORS;
+    let potentialAlternatives = SPONSORS.slice(0);
 
     for (let i = 0; i < 5; i++) {
         let randomNumber = Math.floor(Math.random() * potentialAlternatives.length);

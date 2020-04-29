@@ -8,7 +8,7 @@ const Coach = () => {
     const { updateCoach, nextStep } = useContext(GlobalContext);
 
     let coachAlternatives = [];
-    let potentialAlternatives = COACHES;
+    let potentialAlternatives = COACHES.slice(0);
 
     for (let i = 0; i < 5; i++) {
         let randomNumber = Math.floor(Math.random() * potentialAlternatives.length);
