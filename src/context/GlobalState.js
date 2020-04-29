@@ -24,7 +24,7 @@ const initialState = {
     centralMidfielders: DATA.PLAYERS.CENTRAL_MIDFIELDERS,
     rightWingers: DATA.PLAYERS.RIGHT_WINGERS,
     leftWingers: DATA.PLAYERS.LEFT_WINGERS,
-    strikers: DATA.PLAYERS.STRIKERS,
+    strikers: DATA.PLAYERS.STRIKERS
 }
 
 export const GlobalContext = createContext(initialState);

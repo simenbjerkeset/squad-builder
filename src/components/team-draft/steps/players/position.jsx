@@ -21,7 +21,7 @@ const Position = ({position}) => {
 
     switch(position) {
         case 'goalkeeper': {
-            potentialPlayers = goalkeepers;
+            potentialPlayers = goalkeepers.slice(0);
 
             for (let i = 0; i < 5; i++) {
                 let randomNumber = Math.floor(Math.random() * potentialPlayers.length);
@@ -31,7 +31,7 @@ const Position = ({position}) => {
             break;
         }
         case 'rightBack': {
-            potentialPlayers = rightBacks;
+            potentialPlayers = rightBacks.slice(0);
 
             for (let i = 0; i < 5; i++) {
                 let randomNumber = Math.floor(Math.random() * potentialPlayers.length);
@@ -41,7 +41,7 @@ const Position = ({position}) => {
             break;
         }
         case 'centralDefender': {
-            potentialPlayers = centralDefenders.filter(cd => !players.includes(cd));
+            potentialPlayers = centralDefenders.filter(cd => !players.includes(cd)).slice(0);
             for (let i = 0; i < 5; i++) {
                 let randomNumber = Math.floor(Math.random() * potentialPlayers.length);
                 playersInPosition.push(potentialPlayers[randomNumber]);
@@ -50,7 +50,7 @@ const Position = ({position}) => {
             break;
         }
         case 'leftBack': {
-            potentialPlayers = leftBacks;
+            potentialPlayers = leftBacks.slice(0);
 
             for (let i = 0; i < 5; i++) {
                 let randomNumber = Math.floor(Math.random() * potentialPlayers.length);
@@ -60,7 +60,7 @@ const Position = ({position}) => {
             break;
         }
         case 'centralMidfielder': {
-            potentialPlayers = centralMidfielders.filter(cm => !players.includes(cm));
+            potentialPlayers = centralMidfielders.filter(cm => !players.includes(cm)).slice(0);
 
             for (let i = 0; i < 5; i++) {
                 let randomNumber = Math.floor(Math.random() * potentialPlayers.length);
@@ -70,7 +70,7 @@ const Position = ({position}) => {
             break;
         }
         case 'rightWinger': {
-            potentialPlayers = rightWingers;
+            potentialPlayers = rightWingers.slice(0);
 
             for (let i = 0; i < 5; i++) {
                 let randomNumber = Math.floor(Math.random() * potentialPlayers.length);
@@ -80,7 +80,7 @@ const Position = ({position}) => {
             break;
         }
         case 'leftWinger': {
-            potentialPlayers = leftWingers;
+            potentialPlayers = leftWingers.slice(0);
 
             for (let i = 0; i < 5; i++) {
                 let randomNumber = Math.floor(Math.random() * potentialPlayers.length);
@@ -90,7 +90,7 @@ const Position = ({position}) => {
             break;
         }
         case 'striker': {
-            potentialPlayers = strikers.filter(s => !players.includes(s));
+            potentialPlayers = strikers.filter(s => !players.includes(s)).slice(0);
 
             for (let i = 0; i < 5; i++) {
                 let randomNumber = Math.floor(Math.random() * potentialPlayers.length);
