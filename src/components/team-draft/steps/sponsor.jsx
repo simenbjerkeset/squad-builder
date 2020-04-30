@@ -24,11 +24,13 @@ const Sponsor = () => {
     return(
         <div className="sponsor">
             <h1>Pick a sponsor</h1>
+            <div className="alternatives">
             {
                 sponsorAlternatives.map((sponsor, i) => {
                     return <button onClick={handleSelection} key={sponsor.name} value={i}>{sponsor.name}</button>
                 })
             }
+            </div>
         </div>
     )
 }

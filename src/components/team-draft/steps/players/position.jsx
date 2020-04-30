@@ -110,11 +110,13 @@ const Position = ({position}) => {
     return (
         <div>
             <h1>Pick a player as {playersInPosition[0].position}</h1>
+            <div className="alternatives">
             {
                 playersInPosition.map((player, i) => {
                     return <button onClick={handleSelection} key={player.id} name={player.name} value={i}>{player.name}</button>
                 })
             }
+            </div>
         </div>
     )
 }

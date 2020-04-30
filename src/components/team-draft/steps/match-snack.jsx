@@ -24,11 +24,13 @@ const MatchSnack = () => {
     return(
         <div className="match-snack">
             <h1>Pick a snack for your homegames</h1>
+            <div className="alternatives">
             {
                 snackAlternatives.map((snack, i) => {
                     return <button onClick={handleSelection} key={snack.name} value={i}>{snack.name}</button>
                 })
             }
+            </div>
         </div>
     )
 }

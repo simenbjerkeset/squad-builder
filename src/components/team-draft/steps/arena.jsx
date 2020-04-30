@@ -24,11 +24,13 @@ const Arena = () => {
     return(
         <div className="arena">
             <h1>Pick a stadium</h1>
+            <div className="alternatives">
             {
                 arenaAlternatives.map((arena, i) => {
                     return <button onClick={handleSelection} key={arena.name} value={i}>{arena.name}</button>
                 })
             }
+            </div>
         </div>
     )
 }

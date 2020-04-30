@@ -19,14 +19,16 @@ const Captain = () => {
         <div className="captain">
             <h1>Who will be your captain?</h1>
             <form onSubmit={handleSubmit}>
-                <select defaultValue={0} onChange={handleSelection} required>
-                    <option value="">Choose captain..</option>
-                    {
-                        players.map((player, i) => {
-                        return <option key={player.name} value={i+1}>{player.name}</option>
-                        })
-                    }
-                </select>
+                <div className="select-captain">
+                    <select defaultValue={0} onChange={handleSelection} required>
+                        <option value="">Choose captain..</option>
+                        {
+                            players.map((player, i) => {
+                            return <option key={player.name} value={i+1}>{player.name}</option>
+                            })
+                        }
+                    </select>
+                </div>
                 <button type="submit">Next step</button>
             </form>
         </div>

@@ -23,12 +23,14 @@ const Staff = () => {
 
     return (
         <div className="staff">
-            <h1>Pick a staff member to be part the team</h1>
+            <h1>Pick a staff member</h1>
+            <div className="alternatives">
             {
                 staffAlternatives.map((staff, i) => {
                     return <button onClick={handleSelection} key={staff.id} value={i}>{staff.name}</button>
                 })
             }
+            </div>
         </div>
     )
 }

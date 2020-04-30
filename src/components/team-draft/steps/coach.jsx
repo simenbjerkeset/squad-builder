@@ -24,11 +24,13 @@ const Coach = () => {
     return (
         <div className="coach">
             <h1>Who will coach you team?</h1>
+            <div className="alternatives">
             {
                 coachAlternatives.map((coach, i) => {
                     return <button onClick={handleSelection} key={coach.id} value={i}>{coach.name}</button>
                 })
             }
+            </div>
         </div>
     )
 }
