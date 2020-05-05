@@ -17,13 +17,6 @@ h1 {
     height: 200px;
 }
 
-/* select {
-    width: 300px;
-    height: 40px;
-    margin: auto 10px;
-    font-size: 16px;
-} */
-
 select {
     width: 100%;
     max-width: 300px;
@@ -45,6 +38,13 @@ select {
     transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
 }
 
+select:hover,
+select:focus {
+  color: #005C38;
+  background-color: white;
+  border-bottom-color: #DCDCDC;
+}
+
 .team-name form {
     display: flex;
     flex-direction: column;
@@ -64,6 +64,9 @@ input {
 }
 
 .alternatives {
+    display: flex;
+    justify-content: center;
+
     button {
         margin: 10px;
     }

@@ -14,10 +14,22 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-weight: bold;
     outline: none;
     cursor: pointer;
 
     @media (max-width: 768px) {
         margin: 10px auto;
     }
+}
+
+button:hover,
+button:focus {
+  color: #005C38;
+  background-color: white;
+  border-bottom-color: #DCDCDC;
+}
+
+button:active {
+    border: 1px solid #005C38;
 }
