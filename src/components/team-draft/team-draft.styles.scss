@@ -43,6 +43,14 @@ select:focus {
   color: #005C38;
   background-color: white;
   border-bottom-color: #DCDCDC;
+  /* Firefox */
+  -moz-transition: all 0.3s linear;
+  /* WebKit */
+  -webkit-transition: all 0.3s linear;
+  /* Opera */
+  -o-transition: all 0.3s linear;
+  /* Standard */
+  transition: all 0.3s linear;
 }
 
 .team-name form {

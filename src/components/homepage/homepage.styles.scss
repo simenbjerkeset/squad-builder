@@ -5,7 +5,7 @@
 button {
     width: 200px;
     height: 60px;
-    background-color: #005C38; /* Green */
+    background-color: #005C38;
     border: none;
     color: white;
     padding: auto 32px;
@@ -28,6 +28,14 @@ button:focus {
   color: #005C38;
   background-color: white;
   border-bottom-color: #DCDCDC;
+  /* Firefox */
+  -moz-transition: all 0.3s linear;
+  /* WebKit */
+  -webkit-transition: all 0.3s linear;
+  /* Opera */
+  -o-transition: all 0.3s linear;
+  /* Standard */
+  transition: all 0.3s linear;
 }
 
 button:active {
