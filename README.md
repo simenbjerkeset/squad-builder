@@ -6,6 +6,7 @@ The user is prompted to select a username, team name and formation for their tea
 
 ## To play
 https://hamkam-teambuilder.herokuapp.com/
+
 PS: It is being hosted for free on Heroku. Due to this it might take some time to load the first time around. 
 
 ## Technologies used
